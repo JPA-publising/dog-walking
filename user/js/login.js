@@ -25,3 +25,11 @@ $('document').ready(function() {
 	login();
 })
 
+
+// function move(){
+    
+//     $('.login-img').animate({width:'0'},200, 'linear',function(){
+//         $('.login-img').delay(1000).animate({width:"430"},200)
+// })
+// }
+// setInterval(move, 4000)
