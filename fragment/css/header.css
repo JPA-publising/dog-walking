@@ -1,51 +1,20 @@
-/* 공통 시작 */
-/* 폰트 */
-@font-face {
-  font-family: 'omyu_pretty';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* 폰트 */
-*{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
-/* 공통 끝 */
-
-/* 개인css */
-input, button{
-  cursor: pointer;
-}
-a{
-  color: black;
-  font-size: 20px;
-}
-/* 폰트 적용 */
-body,html {
-  font-family: 'omyu_pretty', sans-serif;
-}
-
-
 /* 헤더 시작 */
-
 .header{
   /* width: 1535.5px; */
   width: 100%;
   min-width: 1024px;
   height: 130px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   /* background-color: aqua; */
+
+  font-family: 'Pretendard-Regular';
+
 }
 .header-section01{
   width: 100%;
-  height: 50px;
+  height: 30px;
   display: flex;
   justify-content: center;
   background-color: #FCD11E;
@@ -78,6 +47,8 @@ body,html {
   display: flex;
   align-items: center;
   /* background-color: pink; */
+
+  font-family: 'Pretendard-Regular';
 }
 .header-logo{
   width: 15%;
