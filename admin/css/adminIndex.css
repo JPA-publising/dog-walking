@@ -1,0 +1,113 @@
+
+.admin-index-wrap {
+    max-width: 1274px;
+    display: flex;
+}
+.aside {
+    background-color: rgba(19, 19, 169, 0.688);
+    
+    min-width: 150px;
+    min-height: 100vh;
+    font-family: 'GmarketSansMedium';
+
+}
+
+.side-menu {
+    
+    font-size: 14px;
+    padding: 10px 10px 10px 30px;
+}
+
+.admin-manage {
+    margin-bottom: 10px;
+}
+
+.sub-menu {
+    font-size: 13px;
+    padding: 3px 10px 10px 10px;
+}
+
+.sub-menu a {
+    color: rgba(192, 192, 192, 0.833);
+}
+
+
+
+
+
+
+
+
+
+
+.admin-main-wrap {
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.chart, .recent-join-user {
+    border: 1px solid gray;
+
+}
+
+.chart-title, .recent-join-title {
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 35px;
+    background-color: rgba(169, 176, 176, 0.532);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.join-chart, .join-user-table {
+    box-sizing: border-box;
+    padding-top: 30px;
+    width: 600px;
+    height: 300px;
+}
+
+.join-user-table {
+    height: 200px;
+    text-align: center;
+    font-size: 13px;
+    padding: 30px 15px 15px 15px;
+}
+
+.join-user-table th {
+    background-color: rgba(169, 176, 176, 0.532);
+
+}
+.join-user-table tr td {
+    border: 1px solid gray;
+}
+
+.user-status {
+    padding: 15px 10px 10px 10px;
+}
+
+.user-status-ul {
+    box-sizing: border-box;
+    background-color: rgba(169, 176, 176, 0.532);
+    height: 80px;
+    padding-top: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    
+}
+
+.user-status-ul li {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.admin-user-info {
+    font-size: 20px;
+    padding-top: 5px;
+}
