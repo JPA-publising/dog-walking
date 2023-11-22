@@ -1,0 +1,87 @@
+.login-page-wrap {
+    width: 1024px;
+    margin: 200px auto;
+    font-family: 'GmarketSansMedium';
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.login-id-input, .login-pw-input {
+    height: 50px;
+}
+.login-pw-input {
+    padding-bottom: 10px;
+}
+.userId-img, .userPw-img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    
+ 
+}
+.userId-img {
+    top: 8px;
+}
+.userPw-img {
+    top: 57px;
+}
+
+#userId, #userPassword {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 18px 0px 18px 0px;
+    width: 400px;
+    height: 30px;
+    box-sizing: border-box;
+    text-indent: 40px;
+}
+
+
+.message-output {
+    position: relative;
+}
+.id-input-ch, .pw-input-ch,.login-error {
+    position:absolute;
+    display: none;
+    color: red;
+    font-size: 13px;
+    top: -20px;
+}
+
+.login-btn {
+    height: 30px;
+}
+.login-submit-btn {
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.find-join-section {
+    height: 30px;
+    width: 350px;
+    margin: 7px auto;
+}
+
+.move-to-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.move-to-section a {
+    font-size: 13px;
+    color: black;
+}
