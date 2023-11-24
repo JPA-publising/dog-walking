@@ -78,71 +78,6 @@ main{
 .searchbox input:focus{
     outline: none;
 }
-.best-container{
-    width: 100%;
-    height: 250px;
-    /* background-color: aqua; */
-}
-.best-container-title{
-    width: 100%;
-    height: 25%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 10px;
-    /* background-color: pink; */
-}
-.best-container-contents{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: blueviolet; */
-}
-.best-container-content{
-    width: 30%;
-    height: 95%;
-    margin: 0 15px;
-    border-radius: 10px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,.15));
-    /* box-shadow: 3px 3px 3px 3px rgb(234, 233, 233); */
-    border: 0.5px solid rgb(234, 233, 233);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fffdf4;
-}
-.best-content-title{
-    width: 90%;
-    height: 30%;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    /* background-color: pink; */
-}
-.best-content-content{
-    width: 90%;
-    height: 30%;
-    font-size: 14px;
-    color: gray;
-    display: flex;
-    align-items: center;
-    /* background-color: blanchedalmond; */
-}
-.best-content-etc{
-    width: 90%;
-    height: 30%;
-    display: flex;
-    font-size: 12.5px;
-    color: rgb(71, 71, 71);
-    /* background-color: yellow; */
-}
-.best-cotnent-reply{
-    margin: 0 15px 0 0;
-}
 .list-container{
     width: 100%;
     height: 1600px;
@@ -171,7 +106,7 @@ main{
 }
 .list-content{
     width: 100%;
-    height: 150px;
+    height: 140px;
     border-bottom: 1px solid #E4E4E4;
     box-sizing: border-box;
     padding: 0 20px;
@@ -192,7 +127,7 @@ main{
     display: flex;
     font-size: 13.5px;
     color: gray;
-    align-items: center;
+    align-items: end;
     /* background-color: papayawhip; */
 }
 .list-content-etc{
