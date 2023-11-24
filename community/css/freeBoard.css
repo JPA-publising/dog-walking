@@ -175,7 +175,14 @@ main{
     border-bottom: 1px solid #E4E4E4;
     box-sizing: border-box;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
     /* background-color: olivedrab; */
+}
+.content-text-box{
+    width: 80%;
+    height: 100%;
+    /* background-color: aqua; */
 }
 .list-content-title{
     width: 100%;
@@ -217,6 +224,25 @@ main{
 }
 .reply-count{
     margin: 0 3px;
+}
+.content-img-box{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+}
+.content-img{
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    background-color: #FCD11E;
+}
+.content-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 .list-page-container{
     width: 100%;
