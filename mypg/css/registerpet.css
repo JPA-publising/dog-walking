@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.main-container{
+    width: 1024px;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+}
+
+.register-form{
+    padding-top: 40px;
+}
+
+.register-main{
+    text-align: center;
+
+}
+
+
+
+/*파일 사진 추가 css*/
+
+
+/*파일 첨부 css*/
+
+
+
+.img-group{
+/* border: 1px solid black; */
+padding-top: 50px;
+}
+
+.img-area{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.addbtn-area{
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    /* position: relative; */
+}
+
+.imgbtn{
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #fcd11e;
+    cursor: pointer;
+    
+}
+
+input[type='file'] {
+    /* position: absolute; */
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: -100px;
+    /* top: 10px; */
+    opacity: 0;
+}
+
+.x-box::after {
+    content: 'x';
+    background-color: #FF7000;
+    color: white;
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    line-height: 13px;
+}
+
+.petname-area{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.petname-area span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+    line-height: 0px;
+    color: rgb(243, 62, 62);
+    /* border: 1px solid black; */
+}
+
+.petname{
+    /* border: 1px solid black; */
+}
+
+.inp-name{
+    /* float: left; */
+    width:350px;
+    height: 40px;
+    margin-left: 6px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+
+.nonename{
+    font-size: 15px;
+    color: red;
+    width: 300px;
+    margin-left: 350px;
+    display: none;
+    /* border: 1px solid black; */
+}
+
+.pet-birth-area{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.pet-birth-area span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+    line-height: 0px;
+    color: rgb(243, 62, 62);
+}
+
+.inp-birth{
+    width:350px;
+    height: 40px;
+    margin-left: 6px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.noneday{
+    font-size: 15px;
+    color: red;
+    width: 320px;
+    margin-left: 350px;
+    display: none;
+}
+/**/
+.pet-type-area{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.pet-type-area span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 15px;
+    line-height: 0px;
+    color: rgb(243, 62, 62);
+}
+
+.inp-type{
+    width:350px;
+    height: 40px;
+    margin-left: 6px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+
+.nonetype{
+    margin-left: 350px;
+    width: 150px;
+    font-size: 15px;
+    color: red;
+}
+
+
+.gender-text{
+    /* border: 1px solid black; */
+    width: 300px;
+    /* margin-left: 350px; */
+    padding-top: 10px;
+    margin-left: 325px;
+    display: flex;
+}
+
+
+.gender-text p:first-child{
+    /* border: 1px solid black; */
+    color: rgb(243, 62, 62);
+    line-height: 15px;
+}
+
+.gender-text p:nth-child(2){
+    /* border: 1px solid black; */
+    font-size: 18px;
+    padding-left: 15px;
+    font-style: normal;
+}
+.gender-choice{
+    /* border: 1px solid black; */
+    width: 300px;
+    /* margin-left: 350px; */
+    padding-top: 15px;
+    margin-left: 320px;
+    font-size: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.genderchck-M{
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+}
+
+
+.genderchck-F{
+    width: 15px;
+    height: 15px;
+}
+
+.neutering-ckeck{
+    /* border: 1px solid black; */
+    padding-top: 20px;
+}
+
+.check-box{
+    /* border: 1px solid black; */
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 300px;
+    /* padding-top: 20px; */
+   position: relative;
+}
+
+.check-box span{
+    display: inline-block;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top :-3px;
+}
+
+.neutering{
+   
+    width: 15px;
+    height: 15px;
+}
+
+.weight{
+    /* border: 1px solid black; */
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.kg{
+    width: 360px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+}
+
+.btn-area{
+    /* border: 1px solid black; */
+    padding-top:30px;
+}
+
+.register-btn-area{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.registerbtn{
+    width: 360px;
+    height: 40px;
+    border-radius:20px;
+    border: none;
+    background-color: #fcd11e;
+    box-shadow:  0 2px 4px rgba(0,0,0,.15); 
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+.registerbtn:hover{
+    width: 360px;
+    height: 40px;
+    border-radius:20px;
+    border: none;
+    background-color: #fcd11e;
+    box-shadow:  inset 2px 4px rgba(0,0,0,.15); 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainmove{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.movebtn{
+    width: 360px;
+    height: 40px;
+    border-radius:20px;
+    border: none;
+    background-color: #e6e6e6;
+    box-shadow:  0 2px 4px rgba(0,0,0,.15); 
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+.movebtn:hover{
+    width: 360px;
+    height: 40px;
+    border-radius:20px;
+    border: none;
+    background-color: #e6e6e6;
+    box-shadow:  inset 2px 4px rgba(0,0,0,.15); 
+    font-size: 18px;
+    font-weight: bold; 
+}
