@@ -11,6 +11,8 @@
 
   font-family: 'Pretendard-Regular';
 
+
+
 }
 .header-section01{
   width: 100%;
@@ -39,6 +41,8 @@
   display: flex;
   justify-content: center;
   /* background-color: blueviolet; */
+
+  border-bottom: 1px solid #ffefb0;
 }
 .header-section02-container{
   /* width: 45%; */

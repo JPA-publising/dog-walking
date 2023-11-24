@@ -98,6 +98,16 @@ body,html,input {
   font-size: 17px;
   text-indent: 20px;
 }
+.input-text1:focus{
+  border: 2px solid #5ac4fd;
+  outline: none;
+  /* border-radius: 10px; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
 .submit-button{
   width: 70px;
   height: 30px;
@@ -133,17 +143,17 @@ body,html,input {
 
 .main-content-contaniner-form3{
   width: 1024px;
-  height: 1300px;
+  height: 1210px;
 }
 .ul-list{
 margin: 0;
 }
 .li-list{
   float: left;
-  margin: 0 5px 60px 20px;
+  margin: 0 5px 50px 20px;
 
   width: 20%;
-  height: 350px;
+  height: 320px;
   /* border: 1px solid blue; */
   border-radius: 10px;
 
@@ -186,19 +196,19 @@ margin: 0;
 .list-name1{
   display: flex;
   margin: 5px;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: bold;
   color: #7a7a7a;
 }
 .list-name2{
   display: flex;
   margin: 5px;
-  font-size: 15px;
+  font-size: 12px;
 }
 .reviw{
   display: flex;
   margin: 5px;
-  font-size: 14px;
+  font-size: 10px;
 
   border-top: 1px solid #e8e8e8;
 }
@@ -207,8 +217,8 @@ margin: 0;
 }
 .won{
   display: flex;
-  margin: 10px;
-  font-size: 23px;
+  margin: 9px;
+  font-size: 20px;
 }
 .basket{
   display: flex;
@@ -241,7 +251,10 @@ margin: 0;
   display: inline-block;
   width: 40px;
   height: 25px;
-
 }
+
+
+
+
 
 /* 메인 끝 */

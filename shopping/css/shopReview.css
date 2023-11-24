@@ -342,9 +342,9 @@ body,html,input {
   align-items: center;
 }
 .basket-button1:hover{
-  transition: all 0.5s linear;
+  transition: all 0.8s linear;
   /* color: #FCD11E; */
-  color: #FF6001;
+  color: #FCD11E;
 }
 .basket-button2{
   border: 1px solid rgb(204, 204, 204);
@@ -359,9 +359,9 @@ body,html,input {
   align-items: center;
 }
 .basket-button2:hover{
-  transition: all 0.5s linear;
+  transition: all 0.8s linear;
   /* background-color: rgb(205, 70, 205); */
-  background-color: skyblue;
+  color: black;
 }
 .right-box1-box10{
   margin: 5px auto;
@@ -412,11 +412,124 @@ body,html,input {
   /* height: 300px; */
   /* border: 1px solid rgb(190, 16, 16); */
 }
-.row-content p{
-  font-size: 20px;
-  font-weight: 700;
-  margin: 35px;
-  text-align: start;
+.review-div{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  align-items: center;
+    /* border: 1px solid rgb(190, 16, 16); */
 }
+.review-button{
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    background-color: #FCD11E;
+    width: 200px;
+    height: 40px;
+    color: white;
+  
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.review-button:hover{
+  transition: all 0.8s linear;
+  color: black;
+}
+.comments{
+  display: flex;
+  margin: 40px auto;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+
+}
+.commentlist{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  padding: 15px;
+}
+.comment-text{
+  width: 100%;
+  height: 200px;
+  
+  /* border: 1px solid rgb(190, 16, 16); */
+  
+}
+
+/* 리뷰 리스트 */
+.star-div{
+  float:right;
+  overflow: hidden;
+  position: relative;
+  /* top: 10px;
+  right: 10px; */
+  /* border: 1px solid rgb(190, 16, 16); */
+}
+.reviewWriter{
+  position: relative;
+  float:left;
+  color: #767676;
+  font-size: 14px;
+  /* border: 1px solid rgb(190, 16, 16); */
+}
+.description{
+  position: relative;
+  float:left;
+  width: 100%;
+  height: 190px;
+  /* border: 1px solid rgb(190, 16, 16); */
+}
+.description p{
+  display: flex; 
+  align-content: start;
+  justify-content: start;
+  align-items: start;
+
+  margin: 10px auto;
+}
+.reviewImg{
+  position: relative;
+  float:left;
+  width: 100%;
+  height: 75px;
+  /* border: 1px solid rgb(190, 16, 16); */
+}
+.imgbox{
+  float:left;
+  margin: 0 5px 5px 0;
+
+}
+.imgs{
+  width: 75px;
+  height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.nav-class{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.nav-class ul{
+  margin: 0;
+}
+.nav-class ul li {
+
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+
 
 /* 메인 끝 */
