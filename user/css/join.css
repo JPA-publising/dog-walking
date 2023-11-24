@@ -4,14 +4,30 @@
     font-family: 'GmarketSansMedium';
 }
 
-.join-title {
-    width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 80px;
+.img-container {
+    width: 100%;
+    height: 200px;
+    min-width: 900px;
+    text-align: center;
+    margin: 150px 0px 20px 0px;
+    position: relative;
 }
+.title-logo {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 900px;
+    position: absolute;
 
+}
+.puppy-img {
+    width: 150px;
+    height: 180px;
+}
+.title-img {
+ position: relative;
+ left: -70px   ;
+   
+}
 
 
 .join-term-title  {
