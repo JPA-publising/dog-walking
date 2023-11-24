@@ -1,56 +1,15 @@
 
-.admin-index-wrap {
-    max-width: 1274px;
-    display: flex;
-}
-.aside {
-    background-color: rgba(19, 19, 169, 0.688);
-    
-    min-width: 150px;
-    min-height: 100vh;
-    font-family: 'GmarketSansMedium';
-
-}
-
-.side-menu {
-    
-    font-size: 14px;
-    padding: 10px 10px 10px 30px;
-}
-
-.admin-manage {
-    margin-bottom: 10px;
-}
-
-.sub-menu {
-    font-size: 13px;
-    padding: 3px 10px 10px 10px;
-}
-
-.sub-menu a {
-    color: rgba(192, 192, 192, 0.833);
-}
-
-
-
-
-
-
-
-
-
-
 .admin-main-wrap {
-    box-sizing: border-box;
-    padding: 20px;
+  
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
+    height: 382px;
 }
 
 .chart, .recent-join-user {
+    height: 340px;
     border: 1px solid gray;
-
 }
 
 .chart-title, .recent-join-title {
@@ -68,11 +27,12 @@
 .join-chart, .join-user-table {
     box-sizing: border-box;
     padding-top: 30px;
-    width: 600px;
+    width: 600px !important;
     height: 300px;
 }
 
 .join-user-table {
+    width: 100%;
     height: 200px;
     text-align: center;
     font-size: 13px;
