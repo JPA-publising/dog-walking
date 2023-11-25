@@ -185,3 +185,55 @@
 
 
 
+.goods-related-info-title {
+    padding: 10px 0px 10px 10px;
+    display: flex;
+}
+
+.goods-related-q-container{ 
+    display: none;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-top: 2px solid gray;
+    width: 1232px;
+}
+
+.goods-related-q {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.goods-related-q tr th {
+    height: 35px;
+    border : 1px solid gray
+
+}
+
+.goods-related-q tr td {
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border : 1px solid gray
+}
+
+
+.pagination-ul {
+
+    margin: 20px auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination-ul li {
+    text-align: center;
+    width: 100%;
+}
+.pagination-ul li a {
+    color: black;
+}
+
