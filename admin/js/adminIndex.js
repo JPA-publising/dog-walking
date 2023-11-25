@@ -21,37 +21,37 @@ let myLineChart = new Chart(joinCanvas.getContext('2d'), {
 
 
 
-$(document).ready(function() {
-    let floatPosition = parseInt($(".admin-fragment").css('top'));
+// $(document).ready(function() {
+//     let floatPosition = parseInt($(".admin-fragment").css('top'));
 
-    $(window).scroll(function() {
-    let scrollTop = $(window).scrollTop() ;
-    let attachedPosition = scrollTop + floatPosition + "px";
+//     $(window).scroll(function() {
+//     let scrollTop = $(window).scrollTop() ;
+//     let attachedPosition = scrollTop + floatPosition + "px";
 
-    $(".admin-fragment").css('top', attachedPosition);
+//     $(".admin-fragment").css('top', attachedPosition);
     
 
-    }).scroll();
+//     }).scroll();
 
-    });
+//     });
 
-$(document).ready(function(){
-    let adminHeaderHeight = $('.top-section').height();
-    console.log(adminHeaderHeight)
+// $(document).ready(function(){
+//     let adminHeaderHeight = $('.top-section').height();
+//     console.log(adminHeaderHeight)
 
-    $('.admin-hidden-title').hide();
+//     $('.admin-hidden-title').hide();
 
-    $(window).scroll(function(){
-        let fixedAdminTitle = $(this).scrollTop()>=adminHeaderHeight;
+//     $(window).scroll(function(){
+//         let fixedAdminTitle = $(this).scrollTop()>=adminHeaderHeight;
 
-        if(fixedAdminTitle){
-            $('.admin-hidden-title').fadeIn(100);
-        }else {
-            $('.admin-hidden-title').hide();
+//         if(fixedAdminTitle){
+//             $('.admin-hidden-title').fadeIn(100);
+//         }else {
+//             $('.admin-hidden-title').hide();
 
-        }
-    })
-})
+//         }
+//     })
+// })
 
 
 

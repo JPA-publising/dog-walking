@@ -1,5 +1,4 @@
 .body {
-    
     font-family: 'S-CoreDream-3Light';
     width: 100%;
     height: 100%;
@@ -22,7 +21,7 @@
 }
 
 .admin-hidden-title {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
@@ -81,42 +80,3 @@
 .sub-menu a {
     color: rgba(192, 192, 192, 0.833);
 }
-
-
-
-
-
-
-/* .admin-menu-title-container {
-    width: 100%;
-
-}
-.admin-menu-title {
-    padding: 0px 0px 20px 20px;
-    box-sizing: border-box;
-}
-
-.admin-menu-title h4 {
-    
-    height: 40px;
-    box-shadow: 0.5px 0.5px 0.5px 1px rgb(198, 197, 197);
-    background-color: white;
-    box-sizing: border-box;
-    padding: 10px 10px 10px 20px;
-}
-
-
-.admin-main-wrap {
-    position: relative;
-
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: white;
-    width: 1272px;
-    box-shadow: 0.5px 0.5px 0.5px 1px rgb(198, 197, 197);
-
-}
-
-.admin-main-bcc {
-    padding: 20px 0px 20px 20px;
-}  */
