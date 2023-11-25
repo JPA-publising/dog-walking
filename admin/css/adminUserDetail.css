@@ -74,7 +74,7 @@
 
 .user-info-table th {
 
-    background-color: rgb(209, 209, 202);
+    background-color: rgb(202, 203, 209);
 }
 
 #self-intro {
@@ -178,7 +178,7 @@
 
 .pagination-ul {
     font-size: 13px;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 200px;
     display: flex;
     align-items: center;
