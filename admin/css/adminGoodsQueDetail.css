@@ -178,10 +178,7 @@
 
 }
 
-
-
-/* 공통설정 */
-.goods-main-img-p, .goods-detail-img-p {
+.goods-main-img-p {
     
         cursor: default;
         background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBzdHJva2U9IiNCNUI1QjUiIHN0cm9rZS13aWR0aD0iMS41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0IDQpIj48cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHJ4PSIzLjUiLz48Y2lyY2xlIGN4PSI4LjU1NiIgY3k9IjguNTU2IiByPSIyLjMzMyIvPjxwYXRoIGQ9Ik0yOCAxOC42NjdsLTcuNzc3LTcuNzc4TDMuMTExIDI4Ii8+PC9nPjxwYXRoIGQ9Ik0wIDBoMzZ2MzZIMHoiLz48L2c+PC9zdmc+)
@@ -196,152 +193,83 @@
 }
 
 
-.x-box::after {
-    content: 'x';
-    background-color: #00c7ae;
-    color: white;
-    display: block;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    top: -5px;
-    right: -5px;
-    text-align: center;
-    line-height: 28px;
-    font-size: 26px;
-    z-index: 999;
-}
 
-.active {
-    display: block;
-}
-
-
-
-
-.goods-related-info-title, .goods-related-review-title {
-    padding: 10px 0px 10px 10px;
-    display: flex;
-}
-
-.goods-related-q-container, .goods-related-review-container{ 
-    display: none;
+.goods-q-content-container {
     box-sizing: border-box;
-    padding-top: 20px;
-    border-top: 2px solid gray;
-    width: 1232px;
-}
-
-.goods-related-q, .goods-related-reivew {
-    text-align: center;
-    font-size: 13px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid gray;
-    width: 100%;
-}
-
-.goods-related-q tr th,
-.goods-related-reivew tr th {
-    height: 35px;
-    border : 1px solid gray
-
-}
-
-.goods-related-q tr td,
-.goods-related-reivew tr td {
-    height: 35px;
     padding: 5px;
-    box-sizing: border-box;
-    border : 1px solid gray
-}
-
-
-
-.q-content {
-    width: 957px;
-    height: 35px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient:vertical;
-    display: -webkit-box;
-    line-height: 2.5;
-}
-
-#reply-td {
-    padding: 0;
-}
-.reply-btn {
-    font-size: 13px;
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-
-.reply-complete {
-    background-color: rgba(6, 141, 141, 0.3);
-}
-
-
-
-.goods-related-q tr:not(.goods-related-q tr:first-child):hover{
-    background-color: rgba(6, 141, 141, 0.3);
-}
-.goods-related-reivew tr:not(.goods-related-reivew tr:first-child):hover{
-    background-color: rgba(6, 141, 141, 0.3);
-}
-
-
-
-.reply-need {
-    cursor: pointer;
+    /* border: 1px solid red; */
+    width: 995px;
+    height: 220px;
     position: relative;
-    z-index: 1;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+}
+.goods-q-content-container h5 {
+    padding: 5px;
+}
+.content {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 20px;
+    height: 115px;
 }
 
-.reply-need::after {
-    content: "";
-    width: 0%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    left: 0;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    background-color: #F8BE41;
+.goods-q-reply-container h5 {
+    padding: 25px 0px 10px 5px;
 }
 
-.reply-need:hover:after {
+
+
+.q-reply, .modify-content {
+    font-size: 14px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    width: 985px;
+    height: 115px;
+    resize: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+.btns, .modify-btn, .reply-btn{
     width: 100%;
-    z-index: -1;
-}
-
-
-
-.pagination-ul {
-
-    margin: 20px auto;
-    width: 200px;
     display: flex;
+    justify-content: end;
     align-items: center;
+    box-sizing: border-box;
+    padding: 5px 0px 5px 5px;
+    
+}
+.btns > button
+,.modify-content-btn
+,.reply-section-btn {
+    cursor: pointer;
+    width: 90px;
+    height: 25px;
 }
 
-.pagination-ul li {
-    text-align: center;
+
+
+.none {
+    display: none;
+}
+
+
+
+.reply-section {
+    box-sizing: border-box;
+    padding: 9px;
     width: 100%;
 }
-.pagination-ul li a {
-    color: black;
+
+#reply-content {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    resize: none;
 }
+
+
+
 

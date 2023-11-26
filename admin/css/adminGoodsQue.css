@@ -47,12 +47,10 @@
 
 
 
-.goods-info-search-container {
+.goods-q-search-container {
     height: 40px;
     border-bottom: 2px solid black;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
 }
 #search-form {
     display: flex;
@@ -81,32 +79,33 @@
     cursor: pointer;
 }
 
-
-.reg-btn{
+.radio-box-form {
+    font-size: 13px;
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100%;
+}
+.radio-box-form input {
+    
+    vertical-align: middle;
+}
+.radio-box-form label:not(.radio-box-form label:last-child) {
+    
+    margin-right: 10px;
 }
 
-.move-to-reg {
-    cursor: pointer;
-    width: 100px;
-    padding: 2px;
-}
 
 
 
 
-
-
-.goods-info-list-container {
+.goods-q-list-container {
     width: 1232px;
     min-height: 614px;
 
 }
 
-.goods-info-table {
+.goods-q-table {
     font-size: 13px;
     box-sizing: border-box;
     padding: 10px;
@@ -116,18 +115,30 @@
 
 
 
-.goods-info-table tr td {
+.goods-q-table tr td {
+    text-align: center;
     cursor: pointer;
     padding: 4px;
 }
 
 .table-column > th{
-    text-align: start;
+    text-align: center;
     padding: 4px;
     
 }
-.goods-info-table tr td:nth-child(7) {
+.goods-q-table tr td:nth-child(7) {
     padding: 0;
+}
+
+.q-content{
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    display: -webkit-box;
+    line-height: 2.1;
 }
 
 
@@ -166,7 +177,7 @@
     z-index: -1;
 }
 
-.goods-info-table tr:hover:not(.table-column){
+.goods-q-table tr:hover:not(.table-column){
     background-color: rgba(6, 141, 141, 0.3);
 }
 

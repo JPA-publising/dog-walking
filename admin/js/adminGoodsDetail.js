@@ -10,6 +10,12 @@ $(document).ready(function(){
         add.stop().slideToggle(400);
 
     })
+    $('.goods-related-review-title').on('click', function(){
+
+        let add = $('.goods-related-review-container');
+        add.stop().slideToggle(400);
+
+    })
 })
 
 

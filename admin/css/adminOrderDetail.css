@@ -82,7 +82,6 @@
 
 /* 주문 상품 정보 */
 .ordered-goods-info-container {
-
     box-sizing: border-box;
     height: 333px;
     padding: 10px 100px 0px 100px;
@@ -141,8 +140,8 @@
 }
 
 .on {
-    
-    height: 100%;
+
+    height: auto;
 }
 
 
