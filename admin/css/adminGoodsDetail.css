@@ -1,3 +1,38 @@
+.admin-menu-title-container {
+    width: 100%;
+
+}
+.admin-menu-title {
+    padding: 0px 0px 20px 20px;
+    box-sizing: border-box;
+}
+
+.admin-menu-title h4 {
+    
+    height: 40px;
+    box-shadow: 0.5px 0.5px 0.5px 1px rgb(198, 197, 197);
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+}
+
+.admin-main-wrap {
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    width: 1272px;
+    box-shadow: 0.5px 0.5px 0.5px 1px rgb(198, 197, 197);
+
+}
+
+
+.admin-main-bcc {
+    padding: 20px 0px 20px 20px;
+}
+
+
 
 .goods-stan-info-title{
     padding: 0px 0px 10px 5px;
@@ -184,4 +219,129 @@
 
 
 
+
+.goods-related-info-title, .goods-related-review-title {
+    padding: 10px 0px 10px 10px;
+    display: flex;
+}
+
+.goods-related-q-container, .goods-related-review-container{ 
+    display: none;
+    box-sizing: border-box;
+    padding-top: 20px;
+    border-top: 2px solid gray;
+    width: 1232px;
+}
+
+.goods-related-q, .goods-related-reivew {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.goods-related-q tr th,
+.goods-related-reivew tr th {
+    height: 35px;
+    border : 1px solid gray
+
+}
+
+.goods-related-q tr td,
+.goods-related-reivew tr td {
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    border : 1px solid gray
+}
+
+
+
+.q-content {
+    width: 957px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    display: -webkit-box;
+    line-height: 2.5;
+}
+
+#reply-td {
+    padding: 0;
+}
+.reply-btn {
+    font-size: 13px;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.reply-complete {
+    background-color: rgba(6, 141, 141, 0.3);
+}
+
+
+
+.goods-related-q tr:not(.goods-related-q tr:first-child):hover{
+    background-color: rgba(6, 141, 141, 0.3);
+}
+.goods-related-reivew tr:not(.goods-related-reivew tr:first-child):hover{
+    background-color: rgba(6, 141, 141, 0.3);
+}
+
+
+
+.reply-need {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.reply-need::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    background-color: #F8BE41;
+}
+
+.reply-need:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+.pagination-ul {
+
+    margin: 20px auto;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination-ul li {
+    text-align: center;
+    width: 100%;
+}
+.pagination-ul li a {
+    color: black;
+}
 
