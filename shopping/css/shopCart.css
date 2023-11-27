@@ -161,11 +161,23 @@ body,html,input,button {
   /* border: 2px solid #f4c300; */
 }
 .quantity-box{
-  display: flex;
   width: 100px;
-  height: 20px;
-  /* border: 2px solid #f4c300; */
-  
+  height: 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  font-size: 21px;
+}
+#increase, #decrease{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  /* border-left: 1px solid silver;
+  border-right: 1px solid silver; */
+
+  /* background-color: white; */
 }
 .quantity-box input{
   display: flex;
@@ -213,10 +225,10 @@ body,html,input,button {
   justify-content: end;
   align-items: center;
 
-  border:1px solid rgb(210, 210, 210);
+  /* border:1px solid rgb(210, 210, 210);
   border-top: none;
   border-right: none;
-  border-left: none;
+  border-left: none; */
 }
 .content-price2{
   width: 100%;
@@ -242,10 +254,13 @@ body,html,input,button {
   border-right: none;
   border-left: none; */
 
-  background-color: #FCD11E;
-  font-size: 25px;
+  background-color: #ffeb9c;
+  border-radius: 5px;
+  font-size: 20px;
 }
-
+.content-price3 div{
+  margin: 30px;
+}
 .cartButton-Box{
   display: flex;
   justify-content: center;
@@ -256,7 +271,7 @@ body,html,input,button {
 .cart-button{
   border: 1px solid rgb(204, 204, 204);
   border-radius: 15px;
-  background-color: #FF6001;
+  background-color: #ff9b61;
   width: 300px;
   height: 50px;
   font-size: 20px;
@@ -267,11 +282,11 @@ body,html,input,button {
   align-items: center;
 }
 .cart-button:hover{
-  transition: all 0.8s linear;
+  /* transition: all 0.8s linear; */
   /* background-color: rgb(205, 70, 205); */
-  color: black;
+  background-color: #FF6001;
 }
 .room{
-  margin: 100px auto;
+  margin: 60px auto;
 }
 /* 메인 끝 */

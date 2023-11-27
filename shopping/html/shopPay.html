@@ -49,8 +49,51 @@
 
 <!-- 미들 -->
   <div class="middle-content">
-    
-  </div>
+    <div>
+      <div class="name-box">
+        <label>이름&nbsp; 
+          <addr class="required">*</addr>
+        </label>
+        <input type="text" placeholder="이름 입력" class="inputbox" id="userName">
+      </div>
+  
+      <div class="name-box2">
+        <label>도로명 주소&nbsp;
+          <addr class="required">*</addr>
+        </label>
+
+        <input type="text" class="postalCode" placeholder="우편 번호" type="text" id="addressPost" name="addressPost" disabled/>
+        <input type="text" placeholder="도로명 및 번지" class="inputbox1" id="address" name="address"  disabled/>
+        <input type="text" class="inputbox2" id="addressDetail" name="addressDetail" disabled/>
+        <input type="text" placeholder="상세 도로명을 입력해주세요" class="inputbox1" id="addressDetails" name="addressDetails" >
+          <button class="box2-serch" value="우편번호 찾기" onclick="addressFind()">주소 찾기</button>
+      </div>
+
+      <div class="name-box4">
+        <label>전화 번호&nbsp;
+          <addr class="required">*</addr>
+        </label>
+        <input type="text" placeholder="전화 번호 입력" class="inputbox2" id="userPhone">
+      </div>
+
+      <div class="name-box4">
+        <label>이메일 주소&nbsp;
+          <addr class="required">*</addr>
+        </label>
+        <input type="text" placeholder="이메일 입력" class="inputbox2" id="userEmail">
+      </div>
+
+      <div class="name-box4">
+        <label>주문 메모&nbsp;
+          <!-- <addr class="required">*</addr> -->
+        </label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="주문 관련 메시지, 예) 배송 관련 메모." class="inputbox3" ></textarea>
+      </div>
+
+
+    </div>
+    </div>
+
 
 <!-- 미들 -->
 
@@ -62,17 +105,15 @@
     삼색이 필로우 고양이 인형
   </div>
   <div class="product-total">
-    165,000
+    <span>33,000</span>
+    <span>x</span>
+    <span>1</span>
+    <span>=</span>
+    <span>33,000</span>
   </div>
 </div>
-<div class="content-price1">
-  <span>합계 : </span><span>99,000</span><span> 원</span>
-</div>
-<div class="content-price2">
-  <span>배송비 : </span><span>무료배송</span>
-</div>
 <div class="content-price3">
-  <span>총합계 : </span><span>99,000</span><span> 원</span>
+  <span>총 결제 금액 :&nbsp;</span><span>33,000</span><span>&nbsp;원</span>
 </div>
 
 <div class="cartButton-Box">
@@ -119,4 +160,7 @@
 <!-- footer 끝 -->
 
 </body>
+<script defer src="/shopping/js/shopPay.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" ></script>
 </html>
