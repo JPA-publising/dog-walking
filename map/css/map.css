@@ -1,6 +1,6 @@
 
 /* 개인css */
-input, button{
+button{
   cursor: pointer;
 }
 a{
@@ -8,9 +8,10 @@ a{
   font-size: 20px;
 }
 /* 폰트 적용 */
-body,html {
+body,html{
   font-family: 'Pretendard-Regular';
 }
+
 
 /* 메인 시작 */
 .main-content{
@@ -23,42 +24,67 @@ body,html {
   width: 100%;
   text-align: center;
 
-  height: 1100px;
-  margin: 10px auto;
+  height: auto;
+  margin: 50px auto;
   border-radius: 10px;
   padding: 10px 0;
   background-color: white;
 }
+.main-content-title{
+  width: 100%;
+  height: 90px;
+}
 .title-info{
   /* margin: 30px; */
+  width: 100%;
+  /* height: 100px; */
+  /* background-color: white; */
+  position: relative;
+}
+.title-info img{
   /* width: 600px; */
   /* height: 100px; */
   /* background-color: white; */
+  margin: -30px -180px;
+  position: absolute;
 }
 .main-content-title-text01{
-  margin: 30px 0 20px 0;
-  font-size: 60px;
+  /* position: absolute; */
+  /* display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center; */
+  /* margin: 30px 0 20px 0; */
+  font-size: 50px;
   /* line-height: 100px; */
   /* background-color: yellow; */
+  font-family: 'NPSfontBold';
+
 }
 .main-content-list{
   margin: 0 auto;
   width: 1000px;
-  height: 860px;
+  height: 730px;
   /* background-color: greenyellow; */
 
-  border-top: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1;
+  /* border-top: 2px solid #f1f1f1; */
+  border-bottom: 2px solid #f1f1f1;
 }
 /* 메인 끝 */
 
 /* 검색 */
+.input-img{
+  width: 25px;
+  height: 25px;
 
-.search-s{
-  font-weight: bold;
+  position :absolute;
+  z-index: 2;
+  top: 61%;
+  /* left: 15px; */
+  cursor: pointer;
+  transform: translateY(-50%);
+  padding: 0 22px;
 }
-
-
 .main-box3-searchbox select , .main-box3-searchbox input{
   margin: 0 10px;
 }
@@ -83,11 +109,12 @@ body,html {
   border:1px solid #8ecc32;
 }
 .main-box3-searchbox input{
-  width: 250px;
-  height: 30px;
+  width: 310px;
+  height: 36px;
 
   /* border:1px solid #8ecc32; */
-  border-radius: 4px;
+  border-radius: 20px;
+  text-indent: 50px;
 }
 
 
@@ -95,8 +122,10 @@ body,html {
 .container-section2{
   width: 100%;
   height: 30px;
-  margin: 40px auto;
-  right: 50px;
+  margin: 10px auto;
+  /* right: 50px; */
+
+  position: relative;
 }
 .container-section3{
 width: 980px;
@@ -106,7 +135,7 @@ display: flex;
 justify-content: space-between;
 text-align: start;
 /* margin-top: 30px; */
-/* background-color: papayawhip; */
+/* background-color: #fffcf0; */
 }
 .search-img{
 
@@ -115,23 +144,26 @@ text-align: start;
 
 }
 .main-container-up-section2-searchbox{
-  margin-left: 50px;
-  border-style: hidden;
-  border-bottom: 1px solid grey;
-  padding-bottom: 5px;
+  /* border-style: hidden; */
+  border: 2px solid #FCD11E;
+  /* padding-bottom: 5px; */
   /* border: 1px solid black; */
-  text-indent: 10px;
+  text-indent: 30px;
+
 }
 .main-container-up-section2-button{
 width: 100px;
-height: 30px;
+height: 50px;
 padding: 0px;
 margin-left: 30px;
 color: white;
-background: coral;
+background-color: #ff9b61;
 border: 1px solid transparent;
 /* border-color: rgb(218, 220, 224); */
 }
+.main-container-up-section2-button:hover{
+  background-color: #FF6001;
+  }
 #map{
   width: 668px;
   height: 600px;
