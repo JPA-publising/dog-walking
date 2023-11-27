@@ -73,7 +73,7 @@ body,html,input {
 .main-content-contaniner-form3{
   margin: 20px auto;
   width: 100%;
-  height: 700px;
+  height: 600px;
   /* border: 2px solid rgb(30, 137, 252); */
 
   display: flex;
@@ -308,7 +308,74 @@ body,html,input {
   font-weight: 700;
   margin: 10px;
 }
+/* 페이2 */
+.pay-amount{
+  width: 540px;
+  height: 70px;
+  
+  display: flex;
 
+  position: relative;
+
+  /* border: 1px solid silver; */
+  border-radius: 5px;
+
+  padding: 10px;
+  background-color : #ececec;
+}
+.pay-name{
+  position: relative;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+
+  font-size: 14px;
+  margin: 5px;
+}
+.pay-count{
+  width: 100px;
+  height: 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* margin-left: 50px; */
+  border: 1px solid silver;
+
+  position: absolute;
+  margin: 40px auto;
+
+  background-color: white;
+}
+#increase, #decrease{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+
+  background-color: white;
+}
+#increase:hover, #decrease:hover{
+
+  background-color: #f4f4f4;
+}
+.pay-add{
+  text-align: end;
+  margin: 0 50px 0 0
+}
+.pay-sum{
+  position: absolute;
+  margin: 40px auto;
+  right: 0;
+  margin: 40px 20px;
+}
+#price{
+  font-size: 19px;
+}
+/* 페이2 끝 */
 .right-box1-box9{
   margin: 15px auto;
   font-size: 13px;
@@ -342,14 +409,15 @@ body,html,input {
   align-items: center;
 }
 .basket-button1:hover{
-  transition: all 0.8s linear;
+  /* transition: all 0.1s linear; */
   /* color: #FCD11E; */
-  color: #FCD11E;
+  /* color: #FF6001; */
+  font-weight: 600;
 }
 .basket-button2{
   border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
-  background-color: #FF6001;
+  background-color: #ff9b61;
   width: 100%;
   height: 40px;
   color: white;
@@ -359,9 +427,9 @@ body,html,input {
   align-items: center;
 }
 .basket-button2:hover{
-  transition: all 0.8s linear;
+  /* transition: all 0.2s linear; */
   /* background-color: rgb(205, 70, 205); */
-  color: black;
+  background-color: #FF6001;
 }
 .right-box1-box10{
   margin: 5px auto;
@@ -396,13 +464,16 @@ body,html,input {
   /* font-weight: 600; */
   position: static;
 }
-.middle-span:hover{
-  /* color: #FCD11E; */
-  transition: all 0.3s linear;
+.middle-span1{
+  /* font-weight: 600; */
+  position: static;
   color: #FCD11E;
-  /* border-bottom: 3px solid #FCD11E; */
-  /* font-size: 23px; */
-  font-weight: 700;
+  font-weight: 500;
+}
+.middle-span:hover{
+  /* transition: all 0.2s linear;
+  color: #FCD11E; */
+  font-weight: 600;
 }
 
 .row-content{
@@ -417,13 +488,24 @@ body,html,input {
   width: 100%;
   height: 100px;
   display: flex;
-  text-align: end;
-  justify-content: end;
+  text-align: center;
+  justify-content: center;
   align-items: center;
     /* border: 1px solid rgb(190, 16, 16); */
   border-bottom: 1px solid #FCD11E;
+  position: relative;
 }
+.input-img{
+  width: 25px;
+  height: 25px;
 
+  position :absolute;
+  z-index: 2;
+  top: 50%;
+  left: 70px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
 .selecReview{
   border: none;
   width: 800px;
@@ -435,6 +517,7 @@ body,html,input {
   font-size: 20px;
   /* padding: 3px 10px; */
   outline:none;
+  padding: 0 48px;
 }
 .selecReview:focus{
   transition: all 0.4s linear;
@@ -479,6 +562,7 @@ body,html,input {
 .comment-text{
   width: 100%;
   height: 200px;
+  position: relative;
   
   /* border: 1px solid rgb(190, 16, 16); */
   
@@ -521,8 +605,26 @@ body,html,input {
   color: #898F92;
   /* margin: 10px auto; */
 }
+.admin-qanda-box{
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+
+  border: 1px solid rgb(192, 192, 192);
+  border-radius:5px;
+  float:left;
+}
+.admin-qanda{
+  width: 100%;
+  height: auto;
+
+  /* position: relative; */
+  float:left;
+
+  margin: 10px auto;
+}
 .question-contents{
-  margin: 10px 0 0px 0;
+  /* margin: 10px 0 0px 0; */
   
   position: relative;
   float:left;
@@ -535,7 +637,7 @@ body,html,input {
   justify-content: start;
   align-items: start;
 
-  font-size: 20px;
+  font-size: 17px;
 }
 .question-seller{
   margin: 10px 0 0px 0;
@@ -552,10 +654,25 @@ body,html,input {
   align-items: start;
   color: #898F92;
 }
+.button-box{
+  width: 100%;
+  height: 40px;
+  position: relative;
 
+  /* float:left; */
+  display: flex;
+  text-align: start;
+  justify-content: start;
+  align-items: start;
+}
 .button1{
-  float:left;
-  margin: 20px auto;
+  /* width: 100px;
+  height: 100px; */
+  /* float:left; */
+  
+  /* margin: 20px auto; */
+
+  /* position: absolute; */
 }
 
 .question-button{
