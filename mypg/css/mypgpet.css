@@ -1,12 +1,9 @@
 /* 폰트 */
-@font-face {
-    font-family: 'omyu_pretty';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+body{
+    font-family: 'Pretendard-Regular';
+}
   
-
+a{color: black;}
 
 *{
     margin: 0px;
@@ -22,7 +19,7 @@
 
 .menu-choice-area{
     /* border: 1px solid black; */
-    padding-top: 20px
+    padding-top: 20px;
     
 }
 .menu-choice{
@@ -34,29 +31,34 @@
 }
 
 
-.menu-choice li a{
+.menu-choice li {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     /* color: #868688; */
     margin: 0px 40px;
+ 
+}
+
+.pro{
+    color: black;
 }
 
 .mywrite{
     color: #868688;
 }
+.mywrite:hover{
+    color: black;
+} 
 .mybuy{
     color: #868688;
+} 
 
-}
+.mybuy:hover{
+    color: black;
+} 
 
-.menu-choice li a:hover{
-    font-weight: 700;
-    font-size: 25px;
-    color: black;
-}
-.pro{
-    color: black;
-}
+
+
 
 .detail-pro-choice{
     border-bottom: 2px solid #e6e6e6;
@@ -72,29 +74,31 @@
 
 .detail-pro-choice ul li{
     margin: 0px 20px;
-    font-size: 20px;
+    font-weight: 700;
     padding: 10px 0px;
+ 
 }
 
-.detail-choice li a{
-    font-weight: 700;
-    font-size: 20px;
-    padding: 10px 0px;
-}
-
-.detail-choice li a:hover{
-    font-weight: 700;
-    font-size: 20px;
-    color: black;
-}
 
 .my-pro-detail{
+    
+    font-size: 15px;
     color: #868688;
+    
 }
-.my-pet-detail{
-    border-bottom: 6px solid #fcd11e;
+
+.my-pro-detail:hover{
+    font-size: 15px;
     color: black;
 }
+
+.my-pet-detail{
+    border-bottom: 6px solid #fcd11e;
+    font-size: 15px;
+    color: black
+}
+
+
 
 .petmain{
     /* border: 1px solid black; */
@@ -107,10 +111,10 @@
     
 }
 
-.text-area h1{
+.text-area h2{
     padding-top: 30px; 
     text-align: center;
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .pet-inter-area{
@@ -120,7 +124,7 @@
 
 .pet-inter-info{
     /* border: 1px solid black; */
-    height: 100%;
+    /* height: 100%; */
     /* display: none; */
 }
 
@@ -135,7 +139,7 @@
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: 350px;
     height: 150px;
     margin: 20px auto;
     border-radius: 30px;
@@ -144,7 +148,7 @@
 }
 .pet-detail-info:hover{
     /* border: 1px solid black; */
-    width: 450px;
+    width: 350px;
     height: 150px;
     margin: 20px auto;
     border-radius: 30px;
@@ -154,10 +158,10 @@
 
 .pet-img-area{
     border: 2px solid #fcd11e;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 25px;
     border-radius: 50%;
 }
 .pet-img{
@@ -170,16 +174,16 @@
     /* border: 1px solid black; */
     padding-right: 10px;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 50px;
 }
 .petname{
     /* border: 1px solid black; */
-    font-size: 30px;
+    font-size: 20px;
 }
 .petdate{
     /* border: 1px solid black; */
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 15px;
     color: #868688;
 }
 

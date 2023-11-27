@@ -68,7 +68,7 @@ function updateImg(files) {
     }
 }
 
-
+/**************************************************/ 
 
 /* 닉네임 유효성검사 스크립트 */
 function checkNick() {
@@ -127,15 +127,39 @@ $('.inp-birth').on('keyup',function () {
 
 });
 
+/*품종 한글로 작성 유효성검사 */ 
+    $('.inp-type').on('keyup',function () {
+        let type = $(".inp-type").val();
+        console.log(type);
+        let reg =/^[가-힣]{2,10}$/;
+    
+        let typeCheck = reg.test(type);
+        console.log(typeCheck);
+
+        if(typeCheck) {
+            $('.nonetype').css("display", "none");
+            console.log("실행!");
+        } else {
+            $('.nonetype').css("display", "block");
+            console.log("미실행!")
+        }
+
+    });
+
+
 /*등록 버튼 클릭시 확인 버튼 이벤트*/
 $('.registerbtn').on('click',function(){
-    
+    confirm("등록하시겠습니까?");
     if(confirm){
         console.log(confirm);
+        alert("등록되었습니다.");
+        // window.location.href="/mypg/html/mypgpet.html";
+         
+    }else{
+        alert("취소하였습니다.");
     }
 
-
-})
+});
 
 
 
