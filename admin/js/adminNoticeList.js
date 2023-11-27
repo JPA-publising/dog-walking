@@ -1,20 +1,29 @@
 
 //공지게시판
 $(document).ready(function() {
-    $('.admin-notice-lists > div').each(function() {
-        var $toggle = $(this).children('div')
+    $('.admin-notice-lists').each(function() {
+        let $toggle = $(this).find('.rr');
 
         $toggle.click(function() {
-         
-            let $dd = $(this).parents('div').siblings('div').children('div').next('section')
-           
-            $dd.stop().slideToggle(400);
+            let $currentSection = $(this).next('.notice-content');
 
-          
-            // 다른 항목의 div를 닫기
-            $(this).parents('div').children('div').siblings('div').find('section')
-            .children('section')
-                .slideUp(400);
+            // 현재 항목 열고/닫기
+            $currentSection.stop().slideToggle(400);
+            // 다른 항목 닫기
+            $(this).parent().siblings().find('.notice-content').slideUp(400);
         });
     });
 });
+
+$(document).ready(function(){
+    $('.rr').on('click', function(){
+
+        let $currentSection = $(this).children('.row')
+        $currentSection.toggleClass('active');
+
+
+        $(this).parent().siblings().find('.row').removeClass('active');
+
+    })
+})
+
