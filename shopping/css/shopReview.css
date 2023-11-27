@@ -4,7 +4,6 @@ button{
 }
 a{
   color: black;
-  font-size: 20px;
 }
 /* 폰트 적용 */
 body,html,input {
@@ -484,32 +483,6 @@ body,html,input {
   /* height: 300px; */
   /* border: 1px solid rgb(190, 16, 16); */
 }
-.review-div{
-  width: 100%;
-  height: 50px;
-  display: flex;
-  text-align: end;
-  justify-content: end;
-  align-items: center;
-    /* border: 1px solid rgb(190, 16, 16); */
-}
-.review-button{
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 5px;
-    background-color: #FCD11E;
-    width: 200px;
-    height: 40px;
-    color: white;
-  
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.review-button:hover{
-  transition: all 0.8s linear;
-  color: black;
-}
 .comments{
   display: flex;
   margin: 40px auto;
@@ -574,13 +547,23 @@ body,html,input {
   height: 75px;
   /* border: 1px solid rgb(190, 16, 16); */
 }
+.admin-review-box{
+  width: 100%;
+  /* height: 300px; */
+  /* position: relative; */
+  display: flex;
+  /* text-align: end; */
+  justify-content: end;
+  
+  /* border: 1px solid rgb(255, 0, 0); */
+}
 /* 관리자 리뷰 */
 .admin-review{
-  width: 100%;
+  width: auto;
   /* height: 150px; */
   position: relative;
-  float:left;
-  margin: 10px auto;
+  /* float:left; */
+  margin: 20px 10px;
   display: flex;
   text-align: start;
 
