@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/fragment/css/header.css">
   <link rel="stylesheet" href="/fragment/css/footer.css">
   <link rel="stylesheet" href="/shopping/css/shopCart.css">
+
 <link rel="icon" href="/img/favicon.ico" type="image/x-icosn" sizes="16x16">
 </head>
 <body>
@@ -63,14 +64,14 @@
                 <div class="thumbnail-dox-div">
                   <a href="">
                     <p>삼색이 필로우 고양이 인형</p>
-                    <p>33,000 원</p>
+                    <p id="price" class="item-price" data-price="33000">33,000원 </p>
                   </a>
                 </div>
                 <div class="quantity-button">
                   <div class="quantity-box">
-                    <button>-</button>
-                    <input type="number" max="" min="1" value="1" pattern="[0-9]*" step="1" readonly>
-                    <button>+</button>
+                      <button id="increase" onclick="changeQuantity(1)"><strong>+</strong></button>
+                      <div><span id="number">1</span></div>
+                      <button id="decrease" onclick="changeQuantity(-1)"><strong>-</strong></button>
                   </div>
                 </div>
               </div>
@@ -78,70 +79,16 @@
           </div>
         </div>
  <!-- 리스트 -->
-   <!-- 리스트 -->
-   <div class="cart_table">
-    <div class="cart_form">
-      <div class="remove-button">
-        <a href="">X</a>
-      </div>
-      <div class="thumbnail">
-        <img src="/img/thumbnail.png" alt="">
-        <div class="thumbnail-dox">
-          <div class="thumbnail-dox-div">
-            <a href="">
-              <p>삼색이 필로우 고양이 인형</p>
-              <p>33,000 원</p>
-            </a>
-          </div>
-          <div class="quantity-button">
-            <div class="quantity-box">
-              <button>-</button>
-              <input type="number" max="" min="1" value="1" pattern="[0-9]*" step="1" readonly>
-              <button>+</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- 리스트 -->
-  <!-- 리스트 -->
-  <div class="cart_table">
-    <div class="cart_form">
-      <div class="remove-button">
-        <a href="">X</a>
-      </div>
-      <div class="thumbnail">
-        <img src="/img/thumbnail.png" alt="">
-        <div class="thumbnail-dox">
-          <div class="thumbnail-dox-div">
-            <a href="">
-              <p>삼색이 필로우 고양이 인형</p>
-              <p>33,000 원</p>
-            </a>
-          </div>
-          <div class="quantity-button">
-            <div class="quantity-box">
-              <button>-</button>
-              <input type="number" max="" min="1" value="1" pattern="[0-9]*" step="1" readonly>
-              <button>+</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- 리스트 -->
+ 
 
 
-<div class="content-price">
-  <span>합계 : </span><span>99,000</span><span> 원</span>
-</div>
-<div class="content-price2">
-  <span>배송비 : </span><span>무료배송</span>
-</div>
 <div class="content-price3">
-  <span>총합계 : </span><span>99,000</span><span> 원</span>
+  <div>
+    <span>총 결제 금액 : </span>
+    <span id="total">99,000</span>
+    <!-- <span> 원</span> -->
+  </div>
+
 </div>
 
 <div class="cartButton-Box">
@@ -188,4 +135,5 @@
 <!-- footer 끝 -->
 
 </body>
+<script defer src="/shopping/js/shopCart.js"></script>
 </html>
