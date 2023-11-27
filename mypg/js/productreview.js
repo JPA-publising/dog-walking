@@ -5,7 +5,7 @@ let $imgList = $('.img-list');
 // file change이벤트로 미리보기 갱신하기
 $input.on('change', function () {
     let files = this.files;
-    //   console.log(files);
+      console.log(files);
 
     // 길이 체크함수 (files, 원하는 길이)
     let newFiles = checkLength(files, 3);
