@@ -5,23 +5,31 @@
     height: 200px;
     min-width: 900px;
     text-align: center;
-    margin: 150px 0px 20px 0px;
+    margin: 120px 0px 70px 0px;
     position: relative;
 }
 .title-logo {
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
-    min-width: 900px;
-    position: absolute;
+    position: relative;
 
 }
+
+.title-logo a {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .puppy-img {
     width: 150px;
     height: 180px;
 }
 .title-img {
  position: relative;
- left: -70px   ;
    
 }
 
@@ -38,6 +46,7 @@
 }
 
 .login-title {
+  
     padding: 2px 6px 6px 3px;
 }
 .login-title span {
@@ -128,6 +137,11 @@
     color: black;
 }
 
+
+
+.blank-line {
+    border: 1px solid rgba(128, 128, 128, 0.173);
+}
 
 
 .adv-section {

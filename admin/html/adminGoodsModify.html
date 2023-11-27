@@ -16,6 +16,9 @@
 </div>
 <div class="admin-index-wrap" >
     <div class="admin-fragment">
+        <div class="admin-hidden-title">
+            <h3>관리자 페이지</h3>
+        </div>
         <aside class="aside">
             <ul class="side-menu">
                 <li class="user-manage admin-manage">회원 관리
@@ -30,34 +33,29 @@
                     <div class="sub-menu">
                         <ul class="sub-menu-ul">
                             <li><a href="/admin/html/adminGoodsList.html">상품 목록</a></li>
-                            <li><a href="/admin/html/adminGoodsReg.html">상품 등록</a></li>
+                            <li><a href="/admin/html/adminGoodsQue.html">상품 문의</a></li>
+                            <li><a href="/admin/html/adminGoodsReview.html">상품 리뷰</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="order-manage admin-manage">주문 관리
                     <div class="sub-menu">
                         <ul class="sub-menu-ul">
-                            <li><a href="#">주문 현황</a></li>
-                            <li><a href="#">주문 목록</a></li>
+                            <li><a href="/admin/html/adminOrderManage.html">주문 현황</a></li>
+                                <li><a href="/admin/html/adminOrderList.html">주문 목록</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="notice-manage admin-manage">공지사항 관리
+                <li class="notice-manage admin-manage">커뮤니티 관리
                     <div class="sub-menu">
                         <ul class="sub-menu-ul"> 
-                            <li><a href="#">공지사항 목록</a></li>
-                            <li><a href="#">공지사항 등록</a></li>
+                            <li><a href="#">공지 목록</a></li>
+                            <li><a href="#">QnA 목록</a></li>
+
                         </ul>
                     </div>
                 </li>
-                <li class="question-manage admin-manage">문의사항 관리
-                    <div class="sub-menu">
-                        <ul class="sub-menu-ul">
-                            <li><a href="#">상품 문의</a></li>
-                            <li><a href="#">QnA 문의</a></li>
-                        </ul>
-                    </div>
-                </li>
+          
             </ul>
         </aside>
      </div>
@@ -186,5 +184,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
 <script type="module" src="/admin/js/adminGoodsModify.js"></script>
+<script src="/fragment/js/adminSide.js"></script>
 </body>
 </html>
