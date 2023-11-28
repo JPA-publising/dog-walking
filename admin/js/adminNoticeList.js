@@ -1,5 +1,6 @@
 
 //공지게시판
+//슬라이드 업다운
 $(document).ready(function() {
     $('.admin-notice-lists').each(function() {
         let $toggle = $(this).find('.rr');
@@ -15,6 +16,8 @@ $(document).ready(function() {
     });
 });
 
+//공지게시판
+//마우스 클릭 효과
 $(document).ready(function(){
     $('.rr').on('click', function(){
 
@@ -27,3 +30,24 @@ $(document).ready(function(){
     })
 })
 
+
+
+//faq 등록 페이지 이동
+$('.notice-faq-btn').on('click',function(){
+    window.location.href="/admin/html/adminFaqReg.html";
+})
+
+//faq 수정 페이지 이동
+$('.faq-modify-btn').on('click',function(){
+    window.location.href="/admin/html/adminFaqModify.html";
+})
+
+//공지사항 등록 페이지 이동
+$('.notice-reg-btn').on('click',function(){
+    window.location.href="/admin/html/adminNoticeReg.html";
+})
+
+//공지사항 수정 페이지 이동
+$('.notice-modify-btn').on('click',function(){
+    window.location.href="/admin/html/adminNoticeModify.html";
+})
