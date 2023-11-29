@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/common/css/common.css">
     <link rel="stylesheet" href="/admin/css/adminAside.css">
-    <link rel="stylesheet" href="/admin/css/adminNoticeReg.css">
+    <link rel="stylesheet" href="/admin/css/adminNoticeModify.css">
     <title>관리자 페이지</title>
 </head>
     
@@ -54,7 +54,6 @@
                                 <li><a href="/admin/html/adminQnaList.html">QnA 목록</a></li>
                                 <li><a href="/admin/html/adminFreeList.html">자유게시판글 목록</a></li>
                                 <li><a href="/admin/html/adminWalkList.html">산책글 목록</a></li>
-    
                             </ul>
                         </div>
                     </li>
@@ -66,7 +65,7 @@
     <main class="main">
         <div class="admin-menu-title-container">
             <div class="admin-menu-title">
-                <h4>공지사항 등록</h4>
+                <h4>공지사항 수정</h4>
             </div>
         </div>
         <div class="admin-main-bcc">
@@ -81,16 +80,16 @@
                         </tr>
                         <tr class="notice-reg-tr">
                             <th>제목</th>
-                            <td><input type="text" name="notice-title" id="notice-title"></td>
+                            <td><input type="text" name="notice-title" id="notice-title" value="기존 타이틀"></td>
                         </tr>
                         <tr class="notice-reg-tr">
                             <th>내용</th>
-                            <td><textarea name="notice-content" id="notice-content"></textarea></td>
+                            <td><textarea name="notice-content" id="notice-content" >기존 내용</textarea></td>
                         </tr>
                     </table>
                     <div class="notice-btns">
                         <button class="notice-list-submit-btn btn">목록</button>
-                        <button class="notice-reg-submit-btn btn">등록</button>
+                        <button class="notice-reg-submit-btn btn">수정</button>
                     </div>
                 </form>
             </div>
@@ -99,7 +98,7 @@
     </div>
 
 <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-<script type="module" src="/admin/js/adminNoticeReg.js"></script>
+<script type="module" src="/admin/js/adminNoticeModify.js"></script>
 <script src="/fragment/js/adminSide.js"></script>
 </body>
 </html>
