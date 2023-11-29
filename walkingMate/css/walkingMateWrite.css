@@ -21,7 +21,7 @@ main{
 .main-container{
     width: 1024px;
     min-width: 1024px;
-    height: 100%;
+    height: auto;
     /* background-color: pink; */
 }
 .cate-title-box{
@@ -95,8 +95,10 @@ main{
 
     /* background-color: greenyellow; */
 }
+
+/* 약속시간 선택 */
 .select-time{
-    width: 50%;
+    width: 25%;
     height: 100%;
 
     box-sizing: border-box;
@@ -119,7 +121,43 @@ main{
 .selct-one-time select{
     width: 100%;
     height: 100%;
+
+    text-indent: 10px;
+
+    cursor: pointer;
 }
+/* 약속시간 선택 끝 */
+
+.select-member{
+    width: 25%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 15px;
+}
+.select-member-title{
+    width: 100px;
+    height: 25px;
+
+    /* background-color: firebrick; */
+}
+.selct-one-member{
+    width: 100px;
+    height: 25px;
+
+    /* background-color: yellow; */
+}
+.selct-one-member select{
+    width: 100%;
+    height: 100%;
+
+    text-indent: 10px;
+
+    cursor: pointer;
+}
+
+
+
 .select-pet{
     width: 50%;
     height: 100%;
@@ -156,6 +194,8 @@ main{
     
     color: white;
     background-color: #FCD11E;
+
+    cursor: pointer;
 }
 .mate-date-n-region-box{
     width: 100%;
@@ -166,7 +206,7 @@ main{
 }
 .select-date{
     width: 50%;
-    height: 100%;
+    height: 300px;
 
     /* background-color: pink; */
 }
@@ -179,6 +219,8 @@ main{
 
     /* display: flex; */
     /* background-color: plum; */
+
+    margin: 35px auto;
 }
 .select-date-title{
     width: 50%;
@@ -190,6 +232,13 @@ main{
     /* padding: 0 15px; */
 
     /* background-color: bisque; */
+}
+.selected-date-wrap img{
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+
+    cursor: pointer;
 }
 .selected-date-wrap{
     width: 100%;
@@ -243,6 +292,8 @@ main{
     padding: 0 15px;
 
     /* background-color: teal; */
+
+    margin: 35px auto;
 }
 .select-region-title{
     width: 100%;
@@ -250,6 +301,7 @@ main{
 
     display: flex;
     align-content: center;
+    
 }
 .searchbox{
     width: 100%;
@@ -278,6 +330,8 @@ main{
     width: 20px;
     height: 20px;
     margin: 0 10px;
+
+    cursor: pointer;
 }
 .map-wrap{
     width: 100%;
@@ -303,6 +357,10 @@ main{
     align-items: center;
 
     /* background-color: khaki; */
+
+    cursor: pointer;
+
+    margin: 80px auto;
 }
 .mate-btn{
     width: 100px;
