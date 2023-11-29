@@ -160,6 +160,3 @@ $('.registerbtn').on('click',function(){
     }
 
 });
-
-
-

@@ -16,7 +16,7 @@ a{color: black;}
     margin: 0px auto;
 }
 
-.register-form{
+.registerupdate-form{
     padding-top: 40px;
 }
 
@@ -83,20 +83,7 @@ input[type='file'] {
     cursor: pointer;
 }
 
-.x-box::after {
-    content: 'x';
-    background-color: #FF7000;
-    color: white;
-    display: block;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    top: -5px;
-    right: -5px;
-    text-align: center;
-    line-height: 13px;
-}
+
 
 .petname-area{
     display: flex;
@@ -318,7 +305,7 @@ input[type='file'] {
     text-align: center;
 }
 
-.registerbtn{
+.registerupbtn{
     width: 360px;
     height: 40px;
     border-radius:20px;
@@ -332,7 +319,7 @@ input[type='file'] {
 }
 
 
-.registerbtn:hover{
+.registerupbtn:hover{
     width: 360px;
     height: 40px;
     border-radius:20px;
@@ -380,4 +367,3 @@ input[type='file'] {
     display: inline-block;
     color: black;
 }
-

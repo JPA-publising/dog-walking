@@ -1,17 +1,17 @@
 /*추가 하기 버튼 유뮤 코드*/ 
-let petlist=$('.pet-detail-area');
-let list=petlist.length;
-console.log(list);
-if(list >= 4){
-    $('.addbtn').css('display','none');
-}else{
-    $('.addbtn').css('display','block');
-}
-
-
+$('document').ready(function(){
+    let petlist=$('.pet-detail-area');
+    let list=petlist.length;
+    console.log(list);
+    if(list >= 4){
+        $('.addbtn').css('display','none');
+    }else{
+        $('.addbtn').css('display','block');
+    }
+})
 
 /* 날짜 및 나이 계산 코드*/
-
+$('document').ready(function(){
 let petdetailarea =$('.pet-detail-area');
 console.log(petdetailarea.length);
 for(let i =0; i<petdetailarea.length; i++){
@@ -54,24 +54,27 @@ if (petDateMatch) {
 }
 
 }
-
+})
 // 수정하기 위해서 칸을 클릭시 쿼리스크링으로 같이 이동하는 스크립트
 $('.pet-detail-area').on('click',function(){
 
-    window.location.href='?'
+    window.location.href='/mypg/html/registerpetupdate.html';
 
 
 })
-// $(document).ready(function () {
-//     // 각 li 요소에 대한 클릭 이벤트 핸들러 등록
-//     $(".pet-detail-area").click(function () {
-//         // 클릭된 li 요소의 data-pet-id 속성 값을 가져오기
-//         var petId = $(this).data("pet-id");
 
-//         // 페이지 이동을 위한 URL 생성 (예: 페이지명은 'petDetailPage.html')
-//         var nextPageUrl = "petDetailPage.html?petId=" + petId;
+//x버튼 클릭시 데이터 삭제 
+$('.x-box span').on('click',function(){
 
-//         // 생성된 URL로 페이지 이동
-//         window.location.href = nextPageUrl;
-//     });
-// });
+    if(confirm("정말로 삭제 하시겠습니까?")){
+
+        // window
+    }
+
+
+})
+
+
+
+
+

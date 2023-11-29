@@ -86,7 +86,7 @@ input[type='file'] {
     opacity: 0;
 }
 
-.submit-btn {
+.update-btn {
     width: 300px;
     padding: 10px;
     background-color: white;
@@ -100,7 +100,7 @@ input[type='file'] {
     border: 1px solid #fcd11e;
 }
 
-.submit-btn:hover {
+.update-btn:hover {
     background-color: #fcd11e;
     color: white;
     font-weight: bold;
@@ -130,12 +130,7 @@ input[type='file'] {
     cursor: pointer;
 }
 
-.file-wrap > li:first-child {
-    position: relative;
-    cursor: pointer;
-    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMCAwaDM2djM2SDB6Ii8+PGcgc3Ryb2tlPSIjMDBDN0FFIiBzdHJva2Utd2lkdGg9IjEuNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNCA0KSI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBkPSJNMTQgN3YxNG03LTdINyIvPjxjaXJjbGUgY3g9IjE0IiBjeT0iMTQiIHI9IjE0Ii8+PC9nPjwvZz48L3N2Zz4=)
-    no-repeat 50% ;
-}
+
 
 .img-list {
     cursor: default;
@@ -144,35 +139,20 @@ input[type='file'] {
     position: relative;
 }
 
-input[type='file'] {
-    cursor: pointer;
-}
 
-.x-box::after {
-    content: 'x';
-    background-color: #FF7000;
-    color: white;
-    display: block;
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    top: -5px;
-    right: -5px;
-    text-align: center;
-    line-height: 13px;
-}
+
+
 
 .grade-group{
     display: flex;
     /* border: 1px solid black; */
 }
 
-.grade{
-    display: flex;
-    border:0;
-
+.grade-group span{
+    display: inline-block;
+    /* border: 1px solid black; */
 }
+
 .text-bold{
     margin-left: 0px;
     display: inline-block;
@@ -182,25 +162,8 @@ input[type='file'] {
     margin-right: 5px;
 
 }
-.grade legend {
-    text-align: right;
-    direction: rtl;
-    display: flex;
-}
-.grade input[type=radio]{
-    display: none;
-}
-.grade label{
-    font-size: 20px;
-    color: transparent;
-    text-shadow: 0 0 0 #f0f0f0;
-}
-.grade label:hover{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
-}
-.grade label:hover ~ label{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
-}
-.grade input[type=radio]:checked ~ label{
-    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+.rating-count{
+    padding-top: 5px;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;;
 }

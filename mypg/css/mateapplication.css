@@ -96,15 +96,17 @@ a{color: black;}
 .my-freeboard-detail{
     
     font-size: 15px;
-    color: black;
-    border-bottom: 6px solid #fcd11e;
+    color: #868688;
 }
 
-.my-walk-detail:hover{
+.my-freeboard-detail:hover{
+    
     font-size: 15px;
     color: black;
     border-bottom: 6px solid #fcd11e;
 }
+
+
 
 .my-walk-detail{
     
@@ -112,17 +114,20 @@ a{color: black;}
     color: #868688;
 }
 
-.my-walkapplication-detail:hover{
+.my-walk-detail:hover{
+    
     font-size: 15px;
     color: black;
     border-bottom: 6px solid #fcd11e;
 }
 
 .my-walkapplication-detail{
-    
     font-size: 15px;
-    color: #868688;
+    color: black;
+    border-bottom: 6px solid #fcd11e;
 }
+
+
 
 .my-review-detail:hover{
     font-size: 15px;
@@ -136,14 +141,37 @@ a{color: black;}
     color: #868688;
 }
 
+.walkmateapplication{
+    padding-top: 20px;
+}
 
-.list-contents-box{
+
+.walkchoiceapplication-form{
+    width: 600px;
+    margin: 0 auto;
+
+    
+}
+.walkchoiceapplication-form-box{
+    float: right;
+}
+
+.walkchoiceapplication-form-box label{
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.walkapplication-list{
     width: 600px;
     height: 800px;
     margin: 0 auto;
     /* display: none; */
     cursor: pointer;
+    padding-top: 20px;
 }
+
+
+
 .list-content{
     margin-top: 20px;
     height: 150px;
@@ -214,21 +242,60 @@ a{color: black;}
     font-size: 12.5px;
     /* background-color: paleturquoise; */
 }
-.list-content-id, .list-content-reply{
+.list-content-address, .list-content-recruit{
     display: flex;
     align-items: center; 
     box-sizing: border-box;
     padding: 8px 20px 8px 0; 
+    
 }
-.list-content-id img{
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    border-radius: 70%;
-}
-.reply-count{
+
+
+
+.recruit-count{
     margin: 0 3px;
 }
+
+
+.recruit-btn-box{
+    width: 70px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcd11e;
+    color: white;
+}
+
+
+
+.recruit-btn-box span{
+  display: inline-block;
+}
+
+.recruit-box{
+    width: 70px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color: white;
+}
+
+.recruit-box span{
+    display: inline-block;
+    /* border: 1px solid black; */
+    
+ 
+}
+
 .content-img-box{
     width: 120px;
     height: 120px;
@@ -270,40 +337,4 @@ a{color: black;}
     display: inline-block;
     font-size: 15px;
     margin: 0 5px;
-}
-
-.nonepage{
-    /* border: 1px solid black; */
-    height: 800px;
-    display: none;
-
-}
-
-.none-img-area{
-    /* border: 1px solid black; */
-   padding-top: 150px;
-}
-
-.none-img{
-    /* border: 1px solid black; */
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-}
-
-.none-img img{
-    width: 100%;
-    height: 100%;
-    /* border: none; */
-}
-
-.nonetext-area{
-    /* border: 1px solid black; */
-    padding-top: 15px;
-    
-}
-
-.nonetext-area p{
-    text-align: center;
-    font-size: 20px;
 }
