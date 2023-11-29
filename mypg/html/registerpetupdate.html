@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/common/css/common.css">
     <link rel="stylesheet" href="/fragment/css/footer.css">
     <link rel="stylesheet" href="/fragment/css/header.css">
-    <link rel="stylesheet" href="../css/registerpet.css">
-    <title>반려동물 프로필</title>
+    <link rel="stylesheet" href="../css/registerpetupdate.css">
+    <title>반려동물 수정하기 프로필</title>
 </head>
 <body>
        <!-- header 시작 -->
@@ -37,10 +37,10 @@
     <!-- header 끝 -->
     <main>
         <div class="main-container">
-            <form action="" method="" class="register-form" enctype="multipart/form-data">
+            <form action="" method="" class="registerupdate-form" enctype="multipart/form-data">
                 <div class="register-main">
                     <div class="title">
-                        <h1>반려동물 등록</h1>
+                        <h1>달이 정보 수정</h1>
                     </div>
                     <div class="form-group">
                         <div class="img-group">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="addbtn-area">
                             <label for="post-image" class="imgbtn">
-                               사진추가
+                               사진수정
                             </label>
                             <input type="file" id="post-image" name="petImg" accept="image/*" multiple required />
                         </div>
@@ -113,12 +113,16 @@
                         </div>
                         <div class="gender-choice">
                             <div>
-                                <input type="radio" class="genderchck-M" name="gender" value="M" required> 
-                                남아
+                               <label for="gendertype-m"> 
+                                    <input type="radio" class="genderchck-M" id="gendertype-m" name="gender" value="M" required> 
+                                    남아
+                                </label>
                             </div>    
                             <div>
-                                <input type="radio" class="genderchck-F" name="gender" value="F" required>
-                                여아 
+                                <label for="gendertype-f">
+                                    <input type="radio" class="genderchck-F" id="gendertype-f" name="gender" value="F" required>
+                                    여아
+                                </label>     
                             </div> 
                         </div>
                         <div class="neutering-ckeck">
@@ -135,7 +139,7 @@
 
                 <div class="btn-area">
                     <div class="register-btn-area">
-                        <button type="button" class="registerbtn">등록</button>
+                        <button type="button" class="registerupbtn">수정하기</button>
                     </div>
                     
                 </div>
@@ -180,6 +184,6 @@
     </div>
     <!--footer 끝-->
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <script src="../js/resisterpet.js"></script>
+    <script src="../js/registerpetupdate.js"></script>
 </body>
 </html>
