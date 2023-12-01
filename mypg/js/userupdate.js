@@ -1,5 +1,5 @@
 let $input = $('#post-image');
-let $img = $('.img-area');
+let $img = $('.img');
 // console.log($input);
 
 // file change이벤트로 미리보기 갱신하기
@@ -20,6 +20,7 @@ $img.on('click', function (e) {
     console.log(name);
     removeImg(name);
     updateImg($input[0].files);
+    
 });
 
 // //미리보기 삭제 함수
@@ -34,6 +35,7 @@ function removeImg(name) {
         }
     }
     $input[0].files = dt.files;
+    console.log($input[0].files);
 }
 
 // //파일 길이 체크 함수(체크할 files객체, 제한할 길이)
@@ -49,21 +51,28 @@ function checkLength(files, num) {
 
 // // 이미지 수가 1개보다 적으면 기본이미지로 대체함
 function updateImg(files) {
-    for (let i = 0; i <= 1; i++) {
-
-        if (i <= files.length) {
+    for (let i = 0; i < 1; i++) {
+        console.log(files);
+        if (i < files.length) {
             console.log(files.length);
             let src = URL.createObjectURL(files[i]);
             console.log(src);
-            $('.img-area img').eq(i).attr('src', src).data('name', `${files[i].name}`);
+            $('.img').eq(i).css('background-image', `url(${src})`).css('background-size', 'cover').data('name', `${files[i].name}`);
 
-            $('.img-area').addClass('x-box');
+            $('.img').addClass('x-box');
             console.log("성공!");
         } else {
-            $('.img-area img')
+            $('.img')
                 .eq(i)
-                .attr('src',"../img/b556fdf429d8de25c3acf62f8186ddb9.png")
+                .css(
+                    'background',
+                    'url(/mypg/img/b556fdf429d8de25c3acf62f8186ddb9.png) no-repeat'
+                ).css(
+                    'backgroundSize',
+                    '150px 150px'
+                )
                 .data('name', null);
+                $('.img').eq(i).removeClass('x-box');
             
         }
     }
@@ -119,3 +128,67 @@ function addressFind() {
     }).open();
     console.log("성공!");
 }
+
+//간단소개 글자수 제한 코드 
+function limitText(){
+    $("#interduce-content").keyup(function(e) {
+        let contents = $('#interduce-content').val();
+      
+        $(".interduce-length-check").html(`<span class="overWrite">  ${getTextLength(contents) + ' / 200'}  </span>`); //실시간 글자수 카운팅
+        $('.overWrite').css('fontSize', '13px');
+        $('.overWrite').css('float', 'right');
+        if (getTextLength(contents) > 200) {
+            $('.overWrite').css('color', 'red')
+            
+        }
+    });
+}
+
+function getTextLength(text) {
+    let len = 0;
+    for (let i = 0; i < text.length; i++) {
+        if (escape(text.charAt(i)).length == 6) {
+            len++;
+        }
+        len++;
+    }
+    return len;
+}
+
+$('document').ready(function(){
+    limitText();
+})
+
+
+
+$('.join-submit-btn').on('click', function () {
+    let content = $('#interduce-content').val();
+
+
+    if(commonReply.getTextLength(content)>200){
+        alert("200자 이내로만 작성 가능합니다.");
+        return;
+    }
+});
+
+
+
+
+//회원탈퇴 클리시 확인 이벤트 
+$('.user-delete-btn').on('click',function(){
+
+    if(confirm("정말로 탈뢰하시겠습니까?")){
+
+    }else{
+
+    }
+
+});
+
+
+$('.join-submit-btn').on('click', function () {
+
+    alert("수정이 완료되었습니다.");
+    
+
+});

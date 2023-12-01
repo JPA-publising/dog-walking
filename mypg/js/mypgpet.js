@@ -3,7 +3,7 @@ $('document').ready(function(){
     let petlist=$('.pet-detail-area');
     let list=petlist.length;
     console.log(list);
-    if(list >= 4){
+    if(list >= 3){
         $('.addbtn').css('display','none');
     }else{
         $('.addbtn').css('display','block');

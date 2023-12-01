@@ -44,8 +44,9 @@
            
                     <div class="form-group">
                         <div class="img-group">
+                            <!--백단 잡업시 수정 필요-->
                             <div class="img-area">
-                                <img src="../img/b556fdf429d8de25c3acf62f8186ddb9.png" class="img">
+                                <div class="img"></div>
                             </div>  
                               
                         </div>
@@ -53,7 +54,7 @@
                             <label for="post-image" class="imgbtn">
                                사진추가
                             </label>
-                            <input type="file" id="post-image" name="petImg" accept="image/*" multiple required />
+                            <input type="file" id="post-image" name="petImg" accept="image/*" multiple/>
                         </div>
                     </div>
 
@@ -120,12 +121,20 @@
                                 <input type="text" id="addressDetails" name="addressDetails" placeholder="상세주소 입력" />
                             <button type="button" class="addrBtn" value="우편번호 찾기" onclick="addressFind()">주소찾기</button>
                         </div>
+                        <div class="interduce-area">
+                            <label for="interduce-content" class="interduce-text">간단소개</label>
+                            <textarea name="interduceContent" id="interduce-content" placeholder="1~200이내로 간단소개 해주세요." cols="30" rows="2" required ></textarea>
+                            <div class="interduce-length-check"></div>
+                        </div>
                     </div>
         
                     <div class="join-btn">
                         <button class="join-submit-btn" type="button">수정하기</button>
                     </div>
                 </form>
+                <div class="user-delete">
+                    <button class="user-delete-btn" type="button">회원탈퇴</button>
+                </div>
         </div>
     </main> 
       <!-- footer 시작 -->
